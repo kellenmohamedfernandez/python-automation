@@ -16,6 +16,7 @@ url = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
 pyautogui.press("win") #tecla windows
 pyautogui.write("chrome")
 pyautogui.press("enter")
+time.sleep(3)
 pyautogui.write(url)
 pyautogui.press("enter")
 time.sleep(3)
@@ -23,5 +24,10 @@ time.sleep(3)
 # Preenchendo os campos Email e Senha:
 pyautogui.click(x=674, y=447)
 pyautogui.write("test@test.com")
+pyautogui.press("tab")
+pyautogui.write("123456")
+pyautogui.press("tab")
+pyautogui.press("enter")
+time.sleep(3)
 
 
