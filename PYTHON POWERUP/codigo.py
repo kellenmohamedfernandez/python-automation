@@ -1,7 +1,9 @@
 # bibliotecas -> pip install pyautogui
+# pip install pandas openpyxl # para trabalhar com excel e planilhas
 
 import pyautogui
 import time
+import pandas
 
 # pyautogui.click -- click do mouse
 # pyautogui.write -- escreve um texto
@@ -29,5 +31,10 @@ pyautogui.write("123456")
 pyautogui.press("tab")
 pyautogui.press("enter")
 time.sleep(3)
+
+# Abrir a base de dados no csv:
+
+tabela = pandas.read_csv("produtos.csv")
+print(tabela)
 
 
